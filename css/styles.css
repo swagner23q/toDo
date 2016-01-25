@@ -1,12 +1,12 @@
-.showPlace {
+.showTasks {
   display: none;
 }
 
-.place {
+.listTask {
   cursor: pointer;
   color: #0088cc;
 }
 
-.place:hover {
+.listTask:hover {
   text-decoration: underline;
 }

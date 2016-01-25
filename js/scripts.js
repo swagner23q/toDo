@@ -1,40 +1,36 @@
 //business logic
-function Place(location, landmark, when, withWho) {
-  this.location = location;
-  this.landmark = landmark;
-  this.when = when;
-  this.withWho = withWho;
+function Task(title, description, dueDate) {
+  this.title = title;
+  this.description = description;
+  this.dueDate = dueDate;
 }
-Place.prototype.fullPlace = function() {
-  return this.location + ", " + this.landmark;
+Task.prototype.toDo = function() {
+  return this.title + " - " + this.dueDate;
 }
 
-//interface
+// //interface
 $(document).ready(function() {
-  $("form#newPlace").submit(function(event) {
+  $("form#taskForm").submit(function(event) {
   event.preventDefault();
 
-    var inputtedLocation = $("input#newLocation").val();
-    var inputtedLandmark = $("input#newLandmark").val();
-    var inputtedWhen = $("input#newWhen").val();
-    var inputtedWithWho = $("input#newWithWho").val();
-    var newPlace = new Place(inputtedLocation, inputtedLandmark, inputtedWhen, inputtedWithWho);
+    var inputtedTask = $("input#newTask").val();
+    var inputtedDescription = $("input#newDescription").val();
+    var inputtedDate = $("input#newDate").val();
+    var newTask = new Task(inputtedTask, inputtedDescription, inputtedDate);
 
-    $("ul#locationLandmarks").append("<li><span class='place'>" + newPlace.fullPlace() + "</span></li>");
+    $("ul#tasksCompleted").append("<li><span class='listTask'>" + newTask.toDo() + "</span></li>");
 
-    $("input#newLocation").val("");
-    $("input#newLandmark").val("");
-    $("input#newWhen").val("");
-    $("input#newWithWho").val("");
-
-    $(".place").last().click(function() {
-      $(".showPlace").show();
-      $(".showPlace h2").text(newPlace.fullPlace());
-      $(".location").text(newPlace.location);
-      $(".landmark").text(newPlace.landmark);
-      $(".when").text(newPlace.when);
-      $(".who").text(newPlace.withWho);
+    $("input#newTask").val("");
+    $("input#newDescription").val("");
+    $("input#newDate").val("");
+//
+    $(".listTask").last().click(function() {
+      $(".showTasks").show();
+      $(".showTasks h2").text(newTask.toDo());
+      $(".taskTitle").text(newTask.title);
+      $(".description").text(newTask.description);
+      $(".date").text(newTask.dueDate);
     });
-
+//
   });
 });

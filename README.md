@@ -1,11 +1,11 @@
-# Places where I've been
+# To Do
 
-#### a program that allows entering and updating of contact information
+#### a program that allows entering and deleting tasks
 
-### By Rob King
+### By Rob King and Sara Wagner
 
 ## Description
-This application is a study in OOP using constructors and prototypes with javaScript. A user enters attributes to places where they have been.
+This application is a study in OOP using constructors and prototypes with javaScript. A user enters tasks and deletes them when completed.
 
 ## setup
 The application can be installed by cloning the project from GitHub.
