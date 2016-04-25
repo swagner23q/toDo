@@ -1,6 +1,6 @@
 # To Do
 
-#### a program that allows entering and deleting tasks
+#### A program that allows entering and deleting tasks
 
 ### By Rob King and Sara Wagner
 
@@ -14,5 +14,3 @@ The application can be installed by cloning the project from GitHub.
 Application: JavaScript, jQuery, HTML5, CSS3
 Testing: Mocha, Chai
 
-###Leagal:
-Copyright (c) 2016 **Sara Wagner Robin B. King**
