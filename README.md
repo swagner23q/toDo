@@ -1,8 +1,8 @@
 # To Do
 
-#### A program that allows entering and deleting tasks
+A program that allows entering and deleting tasks
 
-### By Rob King and Sara Wagner
+#### By Rob King and Sara Wagner
 
 ## Description
 This application is a study in OOP using constructors and prototypes with javaScript. A user enters tasks and deletes them when completed.
