@@ -7,7 +7,7 @@
 ## Description
 This application is a study in OOP using constructors and prototypes with javaScript. A user enters tasks and deletes them when completed.
 
-## setup
+## Setup
 The application can be installed by cloning the project from GitHub.
 
 ## Technology used:
